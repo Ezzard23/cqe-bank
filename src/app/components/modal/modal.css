@@ -1,0 +1,54 @@
+#loginModal {
+    margin:2em 4em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    background:rgba(189, 189, 155, 0.977);
+    text-align: center;
+    width: 300px;
+    height: 400px;
+}
+
+button{
+    background:rgb(15, 38, 107);
+    padding: 7px;
+    border-radius: 3px;
+    margin: 5px;
+    width: 175px;
+    color: white;
+    border: hidden;
+}
+
+input{
+    border-radius: 5px;
+    background: rgb(249, 250, 250);
+    border: 1px solid rgb(181, 189, 196);
+    font-size: 16px;
+    height: 40px;
+    line-height: 24px;
+    padding: 7px 8px;
+    color: rgb(8, 9, 10);
+}
+
+#header p{
+    width: 170px;
+    text-align: center;
+    margin: 0 auto;
+    font-family: "Times New Roman";
+    font-size: 8;
+}
+
+div {
+    margin:5px;
+}
+
+h2{
+    font-family: "Times New Roman";
+}
+
+
+input:focus{
+    background-color: #fff;
+    border-color: #3b49df;
+    box-shadow: 1px 1px 0 #3b49df;
+}

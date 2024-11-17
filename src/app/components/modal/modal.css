@@ -3,14 +3,17 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 5px;
-    background:rgba(189, 189, 155, 0.977);
+    background:#7C7A7A;
     text-align: center;
     width: 300px;
     height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 button{
-    background:rgb(15, 38, 107);
+    background:#BC96E6;
     padding: 7px;
     border-radius: 3px;
     margin: 5px;
@@ -30,12 +33,76 @@ input{
     color: rgb(8, 9, 10);
 }
 
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+
+.form__field:focus {
+  ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #11998e;
+    font-weight:700;    
+  }
+  padding-bottom: 6px;  
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #11998e,#38ef7d);
+  border-image-slice: 1;
+}
+/* reset input */
+.form__field{
+  &:required,&:invalid { box-shadow:none; }
+}
+/* demo */
+
 #header p{
     width: 170px;
-    text-align: center;
-    margin: 0 auto;
+    margin:auto;
     font-family: "Times New Roman";
     font-size: 8;
+}
+
+#header {
+    padding: 14px;
 }
 
 div {
@@ -46,9 +113,3 @@ h2{
     font-family: "Times New Roman";
 }
 
-
-input:focus{
-    background-color: #fff;
-    border-color: #3b49df;
-    box-shadow: 1px 1px 0 #3b49df;
-}
